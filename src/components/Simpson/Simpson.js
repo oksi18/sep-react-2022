@@ -5,7 +5,7 @@ const Simpson = ({simpson}) => {
         <div className="big-block">
             <div className="block">
                <h2 className="title"> {name}  {surname} </h2>
-                <p className="text">some info: {info}</p>
+                <p className="text"><b>Some info:</b> {info}</p>
                 <img className="photo" src={img}  alt={name}/>
 
             </div>
