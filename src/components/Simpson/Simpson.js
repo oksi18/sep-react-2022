@@ -1,0 +1,15 @@
+
+const Simpson = (props) => {
+    const {name, surname, img, info} = props;
+    return(
+        <div className="big-block">
+            <div className="block">
+               <h2 className="title"> {name}  {surname} </h2>
+                <p className="text">some info: {info}</p>
+                <img className="photo" src={img}  alt={name}/>
+
+            </div>
+        </div>
+    )
+}
+export {Simpson};
