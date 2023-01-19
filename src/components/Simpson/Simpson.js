@@ -1,6 +1,6 @@
 
-const Simpson = (props) => {
-    const {name, surname, img, info} = props;
+const Simpson = ({simpson}) => {
+    const {name, surname, img, info} = simpson;
     return(
         <div className="big-block">
             <div className="block">

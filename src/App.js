@@ -1,9 +1,9 @@
-import {Simpson} from "./components/Simpson/Simpson";
-
+import {Simpsons} from "./components/Simpsons/Simpsons";
+import './components/Simpson/Simpson.css'
 const App = () => {
   return (
       <div>
-       <Simpson/>
+       <Simpsons/>
       </div>
   );
 };

@@ -34,13 +34,13 @@ const Simpsons = () => {
             name:"Maggie",
             surname: "Simpson",
             info: ' Margaret Evelyn[13] Lenny [14] "Maggie" Simpson (born January 14, 1988) is the 1-year-old daughter and youngest child of Marge and Homer Simpson, the baby sister to Bart and Lisa Simpson and one of the five main characters of The Simpsons. She is often seen sucking on her pacifier, and when she walks, she trips over her clothing and falls on her face. Because she rarely ever talks, Maggie is the least seen and heard in the Simpson family. Maggie is at the very young, infant age of 1.',
-            img: "https://upload.wikimedia.org/wikipedia/ru/9/9d/Maggie_Simpson.pngg"
+            img: "https://upload.wikimedia.org/wikipedia/ru/9/9d/Maggie_Simpson.png"
         },
     ]
     return (
         <div>
             {
-                simpsons.map(simpson => <Simpsons key={simpson.id} simpson={simpson}/>)
+                simpsons.map(simpson => <Simpson key={simpson.id} simpson={simpson}/>)
             }
         </div>
     )
