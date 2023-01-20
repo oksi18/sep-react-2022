@@ -1,11 +1,12 @@
-
+import { SingleUser, Users} from "./components";
 
 const App = () => {
-  return (
-    <div className="App">
-
-    </div>
-  );
-}
+    return (
+        <div>
+            <Users/>
+            <SingleUser/>
+        </div>
+    );
+};
 
 export {App};
