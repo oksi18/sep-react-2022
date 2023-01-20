@@ -1,9 +1,10 @@
 import {useEffect, useState} from "react";
 import {flightService} from "../service/flightService";
+import {Flight} from "../Flight/Flight";
 
 
 const Flights = () => {
-    const [flight, setFlight] = useState([]);
+    const [flights, setFlight] = useState([]);
     const [count, setCount] = useState(0)
 
     useEffect(() =>{
@@ -14,7 +15,8 @@ const Flights = () => {
 
 return (
     <div>
-
+        {flights.filter(flight => flight.launch_year !== '2020')
+            .map(flight => <Flight key={flight.flight_number} flight={flight}/>)}
     </div>
 );
 }
