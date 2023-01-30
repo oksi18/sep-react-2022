@@ -1,0 +1,28 @@
+.sideBar {
+    padding: 20px;
+    height: 100vh;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+    background-color: gold;
+}
+
+.sideBar a {
+    width: 250px;
+    text-decoration: black;
+    text-align: center;
+    display: flex;
+    padding: 20px;
+    background-color: goldenrod;
+}
+
+.sideBar a[class='active'] {
+    width: 100%;
+    text-decoration: none;
+
+    display: block;
+    padding: 20px;
+    background-color: white;
+}

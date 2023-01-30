@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import {Route, Routes} from "react-router-dom";
+import {MainLayout} from "./layouts/MainLayout";
+import {routes} from "./routes/routes";
+import {HomePage} from "./pages/HomePage/HomePage";
+import {TodosPage} from "./pages/TodosPage/TodosPage";
+import {AlbumsPage} from "./pages/AlbumsPage/AlbumsPage";
+import {CommentsPage} from "./pages/Comments/CommentsPage";
+import {PostByComment} from "./pages/CommentDetailsPage/PostByComment";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Routes>
+        <Route path={routes.index} element={<MainLayout/>}>
+                <Route path={routes.index} index element={<HomePage/>}/>
+            <Route path={routes.todos}  element={<TodosPage/>}/>
+            <Route path={routes.albums}  element={<AlbumsPage/>}/>
+            <Route path={routes.comments}  element={<CommentsPage/>}/>
+              <Route path={routes.postById} index element={<PostByComment/>}/>
+
+        </Route>
+      </Routes>
     </div>
   );
 }
 
-export default App;
+export {App};
